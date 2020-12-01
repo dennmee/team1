@@ -1,4 +1,4 @@
-<!-- Vervang HOSTNAME, USERNAME and PASSWORD zodat je met de database kunt verbinden -->
+<!-- Vervang HOSTNAME, PASSWORD zodat je met de database kunt verbinden -->
 
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,7 @@
 
     <?php
 
-      $database = new PDO('mysql:host=HOSTNAME;dbname=rds01', 'USERNAME', 'PASSWORD');
+      $database = new PDO('mysql:host=HOSTNAME;dbname=rds01', 'admin', 'PASSWORD');
 
       $statement = $database->query('SELECT * FROM `teams`');
 
